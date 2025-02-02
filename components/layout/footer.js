@@ -13,18 +13,16 @@ const Footer = ({ removeClass }) => {
                                 </div>
                                 <div className="textwidget">
                                     <p>
-                                        Start writing, no matter what. The water
-                                        does not flow until the faucet is turned
-                                        on.
+                                   <b>RoamingCEO.com </b> is a premier business networking and investment platform for CEOs, entrepreneurs, and investors. 🚀
                                     </p>
                                     <p>
                                         <strong className="color-black">
                                             Address
                                         </strong>
                                         <br />
-                                        123 Main Street
+                                        Orgits Business Solutions Pvt. Ltd. 
                                         <br />
-                                        New York, NY 10001
+                                        New Delhi, India
                                     </p>
                                     <p>
                                         <strong className="color-black">
@@ -81,27 +79,27 @@ const Footer = ({ removeClass }) => {
                                 <ul className="font-small">
                                     <li className="cat-item cat-item-2">
                                         <Link href="/#">
-                                            <a>About me</a>
+                                            <a>CEO & Business Index</a>
                                         </Link>
                                     </li>
                                     <li className="cat-item cat-item-4">
                                         <Link href="/#">
-                                            <a>Help & Support</a>
+                                            <a>Community & Masterminds</a>
                                         </Link>
                                     </li>
                                     <li className="cat-item cat-item-5">
                                         <Link href="/#">
-                                            <a>​​Licensing Policy</a>
+                                            <a>​Investor-Startup Hub</a>
                                         </Link>
                                     </li>
                                     <li className="cat-item cat-item-6">
                                         <Link href="/#">
-                                            <a>Refund Policy</a>
+                                            <a>Insights & Media</a>
                                         </Link>
                                     </li>
                                     <li className="cat-item cat-item-7">
                                         <Link href="/#">
-                                            <a>Hire me</a>
+                                            <a>Events & Summits</a>
                                         </Link>
                                     </li>
                                     <li className="cat-item cat-item-7">
@@ -125,49 +123,56 @@ const Footer = ({ removeClass }) => {
                                         <a
                                             className="tag-cloud-link"
                                         >
-                                            beautiful
+                                            Leadership & CEO Insights
                                         </a>
                                     </Link>
                                     <Link href="/category">
                                         <a
                                             className="tag-cloud-link"
                                         >
-                                            New York
+                                            Startups & Entrepreneurship
                                         </a>
                                     </Link>
                                     <Link href="/category">
                                         <a
                                             className="tag-cloud-link"
                                         >
-                                            droll
+                                            Investment & Funding
                                         </a>
                                     </Link>
                                     <Link href="/category">
                                         <a
                                             className="tag-cloud-link"
                                         >
-                                            intimate
+                                           Business Technology & AI
                                         </a>
                                     </Link>
                                     <Link href="/category">
                                         <a
                                             className="tag-cloud-link"
                                         >
-                                            loving
+                                            Industry Trends & Market Analysis
                                         </a>
                                     </Link>
                                     <Link href="/category">
                                         <a
                                             className="tag-cloud-link"
                                         >
-                                            travel
+                                            Work-Life Balance & Productivity
                                         </a>
                                     </Link>
                                     <Link href="/category">
                                         <a
                                             className="tag-cloud-link"
                                         >
-                                            fighting{" "}
+                                            Work-Life Balance & Productivity
+                                        </a>
+                                    </Link>
+                                    <Link href="/category">
+                                        <a
+                                            className="tag-cloud-link"
+                                        >
+                                            Blockchain & Web3 Innovations{" "}
                                         </a>
                                     </Link>
                                 </div>
