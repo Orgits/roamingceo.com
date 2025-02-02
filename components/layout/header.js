@@ -148,7 +148,7 @@ const Header = ({ addClass, openSearch }) => {
                                     </span>
                                 </button>
                                 <button className="btn btn-radius bg-primary text-white ml-15 font-small box-shadow">
-                                    Buy Now
+                                    Dashboard
                                 </button>
                             </div>
                         </div>
