@@ -27,10 +27,10 @@ function Author() {
                                                 <span className="fn">
                                                     <a
                                                         href="/author"
-                                                        title="Posts by Steven"
+                                                        title="Posts by Anubhav"
                                                         rel="author"
                                                     >
-                                                        Steven
+                                                        Anubhav
                                                     </a>
                                                 </span>
                                             </span>
@@ -93,7 +93,7 @@ function Author() {
                                 <div className="post-module-2">
                                     <div className="widget-header-2 position-relative mb-30  wow fadeInUp animated">
                                         <h5 className="mt-5 mb-30">
-                                            Posted by Steven
+                                            Posted by Anubhav
                                         </h5>
                                     </div>
                                     <div className="loop-list loop-list-style-1">

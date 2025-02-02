@@ -818,7 +818,7 @@ function Single2() {
                                                     <div className="d-flex align-items-center">
                                                         <h5>
                                                             <Link href="/#">
-                                                                <a>Steven</a>
+                                                                <a>Anubhav</a>
                                                             </Link>
                                                         </h5>
                                                         <p className="date">

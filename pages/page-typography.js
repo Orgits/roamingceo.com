@@ -420,7 +420,7 @@ function Typography() {
                                                 <div className="d-flex justify-content-between">
                                                     <div className="d-flex align-items-center">
                                                         <h5>
-                                                            <a href="#">Steven</a>
+                                                            <a href="#">Anubhav</a>
                                                         </h5>
                                                         <p className="date">December 4, 2020 at 3:12 pm </p>
                                                     </div>
