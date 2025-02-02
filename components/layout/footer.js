@@ -188,8 +188,7 @@ const Footer = ({ removeClass }) => {
                                 </div>
                                 <div className="newsletter">
                                     <p className="font-medium">
-                                        Subscribe to our newsletter and get our
-                                        newest updates right on your inbox.
+                                    Stay ahead with RoamingCEO! 🚀 Subscribe to our newsletter for exclusive business insights, industry trends, and the latest updates—delivered straight to your inbox. 📩
                                     </p>
                                     <form className="input-group form-subcriber mt-30 d-flex">
                                         <input
@@ -203,7 +202,7 @@ const Footer = ({ removeClass }) => {
                                         >
                                             Subscribe
                                         </button>
-                                        <label className="mt-20">
+                                        {/* <label className="mt-20">
                                             {" "}
                                             <input
                                                 className="mr-5"
@@ -218,7 +217,7 @@ const Footer = ({ removeClass }) => {
                                                     terms &amp; conditions
                                                 </a>
                                             </Link>{" "}
-                                        </label>
+                                        </label> */}
                                     </form>
                                 </div>
                             </div>

@@ -210,7 +210,7 @@
             }
             var css = document.createElement("style");
             css.type = "text/css";
-            css.innerHTML = ".typewrite > .wrap { border-right: 0.05em solid #5869DA}";
+            css.innerHTML = ".typewrite > .wrap { border-right: 0.05em solid #21DA17}";
             document.body.appendChild(css)
         }
     }

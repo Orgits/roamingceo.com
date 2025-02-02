@@ -24,7 +24,10 @@
 /* small mobile :992px. */
 @media (max-width:992px){
     .comment-form .email{padding-left:0px;}
-    .logo,
+    .logo { max-width: 200px;
+    align-self: center;
+
+}
     .header-tools{position:relative;z-index:999}
     .preloader::before,
     .counter{font-size:8em}
@@ -34,13 +37,16 @@
         font-family: "Noto Sans JP", sans-serif;
         margin-top: 14px;
         color: var(--color-muted) !important;
+        
     }
     .main-header .main-nav ul li > a::after{ display: none;}
 }
 
 /* small mobile :768px. */
 @media (max-width:767px){
+    
     .comment-form .name{padding-right:0px;margin-bottom:1rem;}
+   
 }
 
 /* Large Mobile :480px. */

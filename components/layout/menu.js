@@ -28,188 +28,103 @@ const Menu = ({ addClass }) => {
         <>
             <div className={scroll ? "header-sticky sticky-bar" : "header-sticky"}>
                 <div className="container align-self-center position-relative">
-                    <div className="main-nav float-left ">
+                    <div className="main-nav float-left">
                         <nav>
                             <ul className="main-menu d-none d-lg-inline font-small">
-                                <li className="menu-item-has-children">
-                                    <Link href="/">
-                                        <a>
-                                            <i className="elegant-icon icon_house_alt mr-5"></i>
-                                            Home
-                                        </a>
-                                    </Link>
-                                    <ul className="sub-menu text-muted font-small">
-                                        <li>
-                                            <Link href="/">
-                                                <a>Home default</a>
-                                            </Link>
-                                        </li>
-                                        <li>
-                                            <Link href="/home-2">
-                                                <a>Homepage 2</a>
-                                            </Link>
-                                        </li>
-                                        <li>
-                                            <Link href="/home-3">
-                                                <a>Homepage 3</a>
-                                            </Link>
-                                        </li>
-                                    </ul>
-                                </li>
                                 <li>
-                                    <Link href="/category/travel">
-                                        <a>Travel</a>
+                                    <Link href="/">
+                                        <a> <i className="elegant-icon icon_house_alt mr-5"></i>Home</a>
                                     </Link>
                                 </li>
                                 <li className="current-item has-mega-menu">
                                     <Link href="#">
-                                        <a>Mega Menu</a>
+                                        <a>Business & Technology</a>
                                     </Link>
                                     <ul className="mega-menu">
                                         <li className="sub-mega-menu sub-mega-menu-width-22">
                                             <Link href="#">
-                                                <a>Travel Blog</a>
+                                                <a>CRM & ERP</a>
                                             </Link>
                                             <ul>
                                                 <li>
                                                     <Link href="/category-grid">
-                                                        <a>Destinations</a>
+                                                        <a>Top CRM Solutions</a>
                                                     </Link>
                                                 </li>
                                                 <li>
                                                     <Link href="/category-grid">
-                                                        <a>Tour Guides</a>
+                                                        <a>Enterprise ERP Systems</a>
                                                     </Link>
                                                 </li>
                                                 <li>
                                                     <Link href="/category-grid">
-                                                        <a>Travel Food</a>
-                                                    </Link>
-                                                </li>
-                                                <li>
-                                                    <Link href="/category-grid">
-                                                        <a>Hotels Booking</a>
-                                                    </Link>
-                                                </li>
-                                                <li>
-                                                    <Link href="/category-grid">
-                                                        <a>Transport Review</a>
-                                                    </Link>
-                                                </li>
-                                                <li>
-                                                    <Link href="/category-grid">
-                                                        <a>Travel Healthy</a>
+                                                        <a>Sales & Marketing Automation</a>
                                                     </Link>
                                                 </li>
                                             </ul>
                                         </li>
                                         <li className="sub-mega-menu sub-mega-menu-width-22">
                                             <Link href="#">
-                                                <a>Fruit &amp; Vegetables</a>
+                                                <a>Blockchain & Web3</a>
                                             </Link>
                                             <ul>
                                                 <li>
                                                     <Link href="/category-grid">
-                                                        <a>Meat &amp; Poultry</a>
+                                                        <a>Introduction to Web3</a>
                                                     </Link>
                                                 </li>
                                                 <li>
                                                     <Link href="/category-grid">
-                                                        <a>Fresh Vegetables</a>
+                                                        <a>Blockchain in Business</a>
                                                     </Link>
                                                 </li>
                                                 <li>
                                                     <Link href="/category-grid">
-                                                        <a>Herbs &amp; Seasonings</a>
-                                                    </Link>
-                                                </li>
-                                                <li>
-                                                    <Link href="/category-grid">
-                                                        <a>Cuts &amp; Sprouts</a>
-                                                    </Link>
-                                                </li>
-                                                <li>
-                                                    <Link href="/category-grid">
-                                                        <a>Exotic Fruits &amp; Veggies</a>
-                                                    </Link>
-                                                </li>
-                                                <li>
-                                                    <Link href="/category-grid">
-                                                        <a>Packaged Produce</a>
+                                                        <a>Crypto & Digital Assets</a>
                                                     </Link>
                                                 </li>
                                             </ul>
                                         </li>
                                         <li className="sub-mega-menu sub-mega-menu-width-22">
                                             <Link href="#">
-                                                <a>Breakfast &amp; Dairy</a>
+                                                <a>Artificial Intelligence</a>
                                             </Link>
                                             <ul>
                                                 <li>
                                                     <Link href="/category-grid">
-                                                        <a>Milk &amp; Flavoured Milk</a>
+                                                        <a>AI in Business</a>
                                                     </Link>
                                                 </li>
                                                 <li>
                                                     <Link href="/category-grid">
-                                                        <a>Butter and Margarine</a>
+                                                        <a>AI-Powered Analytics</a>
                                                     </Link>
                                                 </li>
                                                 <li>
                                                     <Link href="/category-grid">
-                                                        <a>Eggs Substitutes</a>
-                                                    </Link>
-                                                </li>
-                                                <li>
-                                                    <Link href="/category-grid">
-                                                        <a>Marmalades</a>
-                                                    </Link>
-                                                </li>
-                                                <li>
-                                                    <Link href="/category-grid">
-                                                        <a>Sour Cream</a>
-                                                    </Link>
-                                                </li>
-                                                <li>
-                                                    <Link href="/category-grid">
-                                                        <a>Cheese</a>
+                                                        <a>Machine Learning Insights</a>
                                                     </Link>
                                                 </li>
                                             </ul>
                                         </li>
                                         <li className="sub-mega-menu sub-mega-menu-width-22">
                                             <Link href="#">
-                                                <a>Meat &amp; Seafood</a>
+                                                <a>Startup & Investments</a>
                                             </Link>
                                             <ul>
                                                 <li>
                                                     <Link href="/category-grid">
-                                                        <a>Breakfast Sausage</a>
+                                                        <a>Venture Capital Insights</a>
                                                     </Link>
                                                 </li>
                                                 <li>
                                                     <Link href="/category-grid">
-                                                        <a>Dinner Sausage</a>
+                                                        <a>Funding & Angel Investors</a>
                                                     </Link>
                                                 </li>
                                                 <li>
                                                     <Link href="/category-grid">
-                                                        <a>Chicken</a>
-                                                    </Link>
-                                                </li>
-                                                <li>
-                                                    <Link href="/category-grid">
-                                                        <a>Sliced Deli Meat</a>
-                                                    </Link>
-                                                </li>
-                                                <li>
-                                                    <Link href="/category-grid">
-                                                        <a>Wild Caught Fillets</a>
-                                                    </Link>
-                                                </li>
-                                                <li>
-                                                    <Link href="/category-grid">
-                                                        <a>Crab and Shellfish</a>
+                                                        <a>Growth Hacking for Startups</a>
                                                     </Link>
                                                 </li>
                                             </ul>
@@ -217,73 +132,63 @@ const Menu = ({ addClass }) => {
                                     </ul>
                                 </li>
                                 <li>
-                                    <Link href="/category-grid">
-                                        <a>Guides</a>
+                                    <Link href="/community">
+                                        <a>Community & Masterminds</a>
                                     </Link>
                                 </li>
                                 <li>
-                                    <Link href="/category-masonry">
-                                        <a>Food</a>
+                                    <Link href="/investor-startup">
+                                        <a>Investor-Startup Hub</a>
                                     </Link>
                                 </li>
                                 <li>
-                                    <Link href="/category/hotels">
-                                        <a>Hotels</a>
+                                    <Link href="/insights">
+                                        <a>Insights & Media</a>
                                     </Link>
                                 </li>
                                 <li>
-                                    <Link href="/category">
-                                        <a>Review</a>
+                                    <Link href="/events">
+                                        <a>Events & Summits</a>
                                     </Link>
                                 </li>
                                 <li>
-                                    <Link href="/category">
-                                        <a>Healthy </a>
-                                    </Link>
-                                </li>
-                                <li>
-                                    <Link href="/category">
-                                        <a>Lifestyle</a>
-                                    </Link>
-                                </li>
-                                <li>
-                                    <Link href="/category">
+                                    <Link href="/blog">
                                         <a>Blog</a>
                                     </Link>
                                 </li>
                             </ul>
 
-                            <div className={size < 991 ? "d-block d-lg-none" : "d-none"}>
+                            {/* <div className={size < 991 ? "d-block d-lg-none" : "d-none"}>
                                 <button onClick={toggleTrueFalse}>
                                     <span className="menu-icon mr-10">
                                         <span className="menu-icon-inner"></span>
                                     </span>
                                     Main Menu
                                 </button>
-                                <NavMenu isToggled={isToggled} />
-                            </div>
+                                <NavMenu isToggled={isToggled} /> */}
+                            {/* </div> */}
                         </nav>
                     </div>
                     <div className="float-right header-tools text-muted font-small">
                         <ul className="header-social-network d-inline-block list-inline mr-15">
                             <li className="list-inline-item">
                                 <Link href="/#">
-                                    <a className="social-icon fb text-xs-center" target="_blank" href="#">
+                                    <a className="social-icon fb text-xs-center" target="_blank">
                                         <i className="elegant-icon social_facebook"></i>
                                     </a>
                                 </Link>
                             </li>
                             <li className="list-inline-item">
                                 <Link href="/#">
-                                    <a className="social-icon tw text-xs-center" target="_blank" href="#">
-                                        <i className="elegant-icon social_twitter "></i>
+                                    <a className="social-icon tw text-xs-center" target="_blank">
+                                        <i className="elegant-icon social_twitter"></i>
                                     </a>
                                 </Link>
                             </li>
                             <li className="list-inline-item">
                                 <Link href="/#">
-                                    <a className="social-icon pt text-xs-center" target="_blank" href="#">
-                                        <i className="elegant-icon social_pinterest "></i>
+                                    <a className="social-icon pt text-xs-center" target="_blank">
+                                        <i className="elegant-icon social_pinterest"></i>
                                     </a>
                                 </Link>
                             </li>
