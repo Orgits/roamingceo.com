@@ -22,7 +22,7 @@ function Home() {
                                     <h2>
                                         Hello, I’m <span>Anubhav Sharma</span>
                                     </h2>
-                                    <h3 className="mb-20"> Welcome to my blog</h3>
+                                    <h3 className="mb-20"> Welcome to Roamingceo</h3>
                                     <h5 className="text-muted">
                                         Don't miss out on the latest news about
                                         Travel tips, Hotels review, Food
