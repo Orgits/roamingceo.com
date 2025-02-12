@@ -20,7 +20,7 @@ function Home() {
                                         ></span>
                                     </p>
                                     <h2>
-                                        Hello, I’m <span>Anubhav </span>
+                                        Hello, I’m <span>CEO </span>
                                     </h2>
                                     <h3 className="mb-20"> Welcome to Roamingceo</h3>
                                     <h5 className="text-muted">

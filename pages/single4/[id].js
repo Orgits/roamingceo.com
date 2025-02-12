@@ -938,10 +938,10 @@ const SingleVendor = () => {
                                                         alt=""
                                                     />
                                                     <h5 className="mb-20">
-                                                        Hello, I'm Anubhav
+                                                        Hello, I'm CEO
                                                     </h5>
                                                     <p className="font-medium text-muted">
-                                                        Hi, I’m Stenven, a Florida
+                                                        Hi, I’m CEO, a Florida
                                                         native, who left my career in
                                                         corporate wealth management six
                                                         years ago to embark on a summer

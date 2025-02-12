@@ -983,7 +983,7 @@ function Single() {
                                                         <h5>
                                                             <Link href="/#">
                                                                 <a>
-                                                                    Anubhav
+                                                                    CEO
                                                                 </a>
                                                             </Link>
                                                         </h5>
