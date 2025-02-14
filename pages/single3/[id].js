@@ -6,21 +6,19 @@ import data from "../../data/post.json";
 import comments from "../../data/comments.json";
 
 const SingleVendor = () => {
+    // Remove or add optional chaining to prevent errors
+    // console.log(comments[1]?.reply?.[0]); // Safe version
 
-    console.log(comments[1].reply[0]);
-
-    let Router = useRouter()
-
+    const router = useRouter(); // Changed variable name to lowercase (convention)
     const [singleData, setSingleData] = useState(null);
-
-
-    const { id } = Router.query;
+    const { id } = router.query;
 
     useEffect(() => {
-        setSingleData(data.find((data) => data.id == id));
+        if (id) setSingleData(data.find((item) => item.id == id));
     }, [id]);
 
-
+    // Rest of the component remains the same...
+    
     return (
         <>
 
