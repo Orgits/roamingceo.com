@@ -44,13 +44,16 @@ function Home() {
                                     </form>
                                 </div>
                                 <div className="col-lg-6 text-right d-none d-lg-block">
-                                    <Image
-                                        src="/assets/imgs/authors/featured.png"
-                                        alt="Roamingceo"
-                                        layout="responsive"
-                                        priority={false} // ✅ Lazy loading enabled
-                                        quality={80}
-                                    />
+                                
+
+<Image
+  src="/assets/imgs/authors/featured.png"
+  alt="Author Featured Image"
+  width={300} // ✅ Set a fixed width
+  height={300} // ✅ Set a fixed height
+  quality={80} // Optional: Adjust image quality
+  priority={true} // Optional: Load image faster
+/>
                                 </div>
                             </div>
                         </div>
