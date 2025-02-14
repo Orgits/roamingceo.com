@@ -13,6 +13,7 @@ const SingleVendor = () => {
     useEffect(() => {
         if (id) {
             const foundPost = data.find((post) => post.id == id);
+            console.log("Found Post:", foundPost);
             setSingleData(foundPost);
         }
     }, [id]);
@@ -81,10 +82,16 @@ const SingleVendor = () => {
 
                     {/* Post Content */}
                     <article className="entry-wraper mb-50">
-                        <div className="entry-main-content wow fadeIn animated">
-                            <p>{singleData.desc}</p>
-                            <hr className="wp-block-separator is-style-dots" />
-                        </div>
+                    <div className="entry-main-content wow fadeIn animated">
+    <p>{singleData.desc}</p>
+
+    {singleData.blogdesc
+        ? <div dangerouslySetInnerHTML={{ __html: singleData.blogdesc }} />
+        : <p>Loading detailed content...</p>
+    }
+
+    <hr className="wp-block-separator is-style-dots" />
+</div>
 
                         {/* Subscribe Section */}
                         <div className="border-radius-10 border bg-white mb-30 p-30 wow fadeIn animated">
@@ -162,7 +169,8 @@ const SingleVendor = () => {
                 </div>
             </main>
         </Layout>
+        
     );
-};
 
+};
 export default SingleVendor;
