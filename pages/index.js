@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import Layout from "./../components/layout/layout";
 import PostCarousel1 from "./../components/slider/PostCarousel1";
 import post from "../data/post.json";
@@ -43,9 +44,12 @@ function Home() {
                                     </form>
                                 </div>
                                 <div className="col-lg-6 text-right d-none d-lg-block">
-                                    <img
+                                    <Image
                                         src="/assets/imgs/authors/featured.png"
-                                        alt=""
+                                        alt="Roamingceo"
+                                        layout="responsive"
+                                        priority={false} // ✅ Lazy loading enabled
+                                        quality={80}
                                     />
                                 </div>
                             </div>

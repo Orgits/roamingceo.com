@@ -39,34 +39,54 @@ function MyApp({ Component, pageProps }) {
         });
       }
 
-      // ✅ Google Analytics (gtag.js)
-      window.dataLayer = window.dataLayer || [];
-      function gtag() {
-        window.dataLayer.push(arguments);
+      // ✅ Google Analytics (gtag.js) - Runs Only in Browser
+      const GA_TRACKING_ID = "G-L5R1V9B5MK"; // Change this if needed
+
+      const handleRouteChange = (url) => {
+        window.gtag("config", GA_TRACKING_ID, {
+          page_path: url,
+        });
+      };
+
+      if (!window.gtag) {
+        window.dataLayer = window.dataLayer || [];
+        function gtag() {
+          window.dataLayer.push(arguments);
+        }
+        window.gtag = gtag;
+        gtag("js", new Date());
+        gtag("config", GA_TRACKING_ID);
       }
-      gtag("js", new Date());
-      gtag("config", "G-L5R1V9B5MK");
+
+      router.events.on("routeChangeComplete", handleRouteChange);
+
+      return () => {
+        router.events.off("routeChangeComplete", handleRouteChange);
+      };
     }
-
-    // ✅ Route Change Error Handling
-    const handleRouteChangeError = (err, url) => {
-      console.error(`Route change to ${url} failed.`, err);
-    };
-
-    router.events.on("routeChangeError", handleRouteChangeError);
-
-    return () => {
-      router.events.off("routeChangeError", handleRouteChangeError);
-    };
   }, [router.events]);
 
   return (
     <>
-      {/* ✅ Google Tag Manager (gtag.js) in <Head> */}
       <Head>
+        {/* ✅ Default Meta Tags for SEO */}
+        <meta
+          name="description"
+          content="RoamingCEO - Business & Tech Insights for Entrepreneurs and CEOs."
+        />
+        <meta property="og:title" content="RoamingCEO - Business & Tech Insights" />
+        <meta
+          property="og:description"
+          content="Stay ahead with expert business, marketing, and tech strategies for CEOs, startups, and professionals."
+        />
+        <meta property="og:image" content="https://roamingceo.com/og-image.jpg" />
+        <meta property="og:url" content="https://roamingceo.com" />
+        <meta name="twitter:card" content="summary_large_image" />
+
+        {/* ✅ Google Analytics (gtag.js) */}
         <script
           async
-          src="https://www.googletagmanager.com/gtag/js?id=G-L5R1V9B5MK"
+          src={`https://www.googletagmanager.com/gtag/js?id=${GA_TRACKING_ID}`}
         ></script>
         <script
           dangerouslySetInnerHTML={{
@@ -74,12 +94,12 @@ function MyApp({ Component, pageProps }) {
               window.dataLayer = window.dataLayer || [];
               function gtag(){dataLayer.push(arguments);}
               gtag('js', new Date());
-              gtag('config', 'G-L5R1V9B5MK');
+              gtag('config', '${GA_TRACKING_ID}');
             `,
           }}
         />
       </Head>
-      
+
       <Component {...pageProps} />
     </>
   );
