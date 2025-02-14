@@ -21,9 +21,11 @@ function Home() {
                                         ></span>
                                     </p>
                                     <h2>
-                                        Hello, I’m <span>CEO </span>
+                                        Hello, I’m <span>CEO </span> 
+                                        
                                     </h2>
-                                    <h3 > Welcome to Roamingceo</h3>
+                                
+                                    <h3 className="mb-20" > Welcome to Roamingceo</h3>
                                     <h5 className="text-muted">
                                         Don't miss out on the latest news about
                                         Travel tips, Hotels review, Food
