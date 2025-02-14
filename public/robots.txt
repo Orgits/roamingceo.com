@@ -1,0 +1,18 @@
+User-agent: *
+Disallow: /admin/
+Disallow: /login/
+Disallow: /signup/
+Disallow: /cart/
+Disallow: /checkout/
+Disallow: /private/
+Disallow: /*?*
+Disallow: /*.php$
+
+Allow: /blog/
+Allow: /business/
+Allow: /networking/
+Allow: /events/
+Allow: /ceo-index/
+Allow: /masterminds/
+
+Sitemap: https://roamingceo.com/sitemap.xml
