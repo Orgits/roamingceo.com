@@ -1,9 +1,11 @@
+
 import Link from "next/link";
 import Menu from "./menu";
 
 const Header = ({ addClass, openSearch }) => {
     return (
         <>
+            
             <header className="main-header header-style-1 font-heading">
                 <div className="header-top">
                     <div className="container">

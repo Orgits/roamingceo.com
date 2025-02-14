@@ -1,5 +1,6 @@
 import React, { useEffect } from "react";
 import { useRouter } from "next/router";
+import Head from "next/head";
 
 import "react-perfect-scrollbar/dist/css/styles.css";
 import "slick-carousel/slick/slick.css";
@@ -37,6 +38,14 @@ function MyApp({ Component, pageProps }) {
           });
         });
       }
+
+      // ✅ Google Analytics (gtag.js)
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        window.dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+      gtag("config", "G-L5R1V9B5MK");
     }
 
     // ✅ Route Change Error Handling
@@ -51,7 +60,29 @@ function MyApp({ Component, pageProps }) {
     };
   }, [router.events]);
 
-  return <Component {...pageProps} />;
+  return (
+    <>
+      {/* ✅ Google Tag Manager (gtag.js) in <Head> */}
+      <Head>
+        <script
+          async
+          src="https://www.googletagmanager.com/gtag/js?id=G-L5R1V9B5MK"
+        ></script>
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag('js', new Date());
+              gtag('config', 'G-L5R1V9B5MK');
+            `,
+          }}
+        />
+      </Head>
+      
+      <Component {...pageProps} />
+    </>
+  );
 }
 
 export default MyApp;
