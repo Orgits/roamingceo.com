@@ -37,7 +37,7 @@ const Menu = ({ addClass }) => {
                                     </Link>
                                 </li>
                                 <li className="current-item has-mega-menu">
-                                    <Link href="#">
+                                    <Link href="/blog/12">
                                         <a>Business & Technology</a>
                                     </Link>
                                     <ul className="mega-menu">
@@ -132,22 +132,22 @@ const Menu = ({ addClass }) => {
                                     </ul>
                                 </li>
                                 <li>
-                                    <Link href="/community">
+                                    <Link href="/blog/13">
                                         <a>Community & Masterminds</a>
                                     </Link>
                                 </li>
                                 <li>
-                                    <Link href="/investor-startup">
+                                    <Link href="/blog/12">
                                         <a>Investor-Startup Hub</a>
                                     </Link>
                                 </li>
                                 <li>
-                                    <Link href="/insights">
+                                    <Link href="/blog/14">
                                         <a>Insights & Media</a>
                                     </Link>
                                 </li>
                                 <li>
-                                    <Link href="/events">
+                                    <Link href="/blog/15">
                                         <a>Events & Summits</a>
                                     </Link>
                                 </li>
