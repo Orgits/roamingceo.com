@@ -200,7 +200,7 @@ const Footer = ({ removeClass }) => {
                     </div>
                     <div className="footer-copy-right pt-30 mt-20 wow fadeInUp animated">
                         <p className="float-md-left font-small text-muted">
-                            © 2025, RoamingCEO{" "}
+                            © 2025, RoamingCEO | All Rights Reserved{" "}
                         </p>
                         <p className="float-md-right font-small text-muted">
                             Design by{" "}
