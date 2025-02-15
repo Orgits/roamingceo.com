@@ -367,7 +367,7 @@ function Typography() {
                                             </div>
                                             <div className="desc">
                                                 <p className="comment">
-                                                    Vestibulum euismod, leo eget varius gravida, eros enim interdum urna, non rutrum enim ante quis metus. Duis porta ornare nulla ut bibendum
+                                                    Read
                                                 </p>
                                                 <div className="d-flex justify-content-between">
                                                     <div className="d-flex align-items-center">

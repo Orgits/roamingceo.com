@@ -70,11 +70,7 @@ const SingleVendor = () => {
                                                     The Best Time to Travel to Cambodia
                                                 </h1>
                                                 <p className="excerpt mb-30">
-                                                    As school districts across the
-                                                    United States consider whether and
-                                                    how to restart in-person classes,
-                                                    their challenge is complicated by a
-                                                    pair of fundamental uncertainties.
+                                                The best time to travel to Cambodia is during the cool and dry season, which runs from November to March. During this period, temperatures are pleasant, ranging between 21°C to 32°C (70°F to 90°F), making it ideal for exploring iconic sites like Angkor Wat, Phnom Penh, and the beaches of Sihanoukville without the discomfort of extreme heat or heavy rainfall. The skies are clear, and humidity levels are lower, providing perfect conditions for sightseeing, trekking, and enjoying the country’s vibrant culture. However, this is also peak tourist season, so expect larger crowds and higher accommodation prices. If you prefer fewer tourists and don’t mind occasional showers, consider visiting during the shoulder months of April to June or September to October, when the landscape is lush and prices are more budget-friendly.
                                                 </p>
                                                 <div className="entry-meta align-items-center meta-2 font-small color-muted">
                                                     <p className="mb-5">
@@ -91,7 +87,7 @@ const SingleVendor = () => {
                                                         By{" "}
                                                         <a href="/author">
                                                             <span className="author-name font-weight-bold">
-                                                                Barbara Cartland
+                                                               RoamingCEO
                                                             </span>
                                                         </a>
                                                     </p>
