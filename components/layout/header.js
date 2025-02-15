@@ -143,12 +143,12 @@ const Header = ({ addClass, openSearch }) => {
                                     </li>
                                 </ul>
                                 <span className="vertical-divider mr-20 ml-20 d-none d-md-inline"></span>
-                                <button className="search-icon d-none d-md-inline" onClick={openSearch}>
+                                {/* <button className="search-icon d-none d-md-inline" onClick={openSearch}>
                                     <span className="mr-15 text-muted font-small">
                                         <i className="elegant-icon icon_search mr-5"></i>
                                         Search
                                     </span>
-                                </button>
+                                </button> */}
                                 <button className="btn btn-radius bg-primary text-white ml-15 font-small box-shadow">
                                     Dashboard
                                 </button>
