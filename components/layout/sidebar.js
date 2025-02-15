@@ -87,7 +87,7 @@ const Sidebar = ({ removeClass }) => {
                 <div className="widget-header-2 position-relative mb-30">
                   <h5 className="mt-5 mb-30">Advertise here</h5>
                 </div>
-                <Link href="https://themeforest.net/user/alithemes/portfolio" target="_blank">
+                <Link href="https://themeforest.net/user/Orgits/portfolio" target="_blank">
                   <img className="advertise-img border-radius-5" src="/assets/imgs/ads/ads-1.jpg" alt="Advertisement" />
                 </Link>
               </div>

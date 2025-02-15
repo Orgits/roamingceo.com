@@ -229,9 +229,9 @@ const Footer = ({ removeClass }) => {
                         </p>
                         <p className="float-md-right font-small text-muted">
                             Design by{" "}
-                            <Link href="https://alithemes.com">
+                            <Link href="https://Orgits.com">
                                 <a target="_blank">
-                                    AliThemes
+                                    Orgits
                                 </a>
                             </Link>{" "}
                             | All rights reserved

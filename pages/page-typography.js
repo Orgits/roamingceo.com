@@ -30,7 +30,7 @@ function Typography() {
                                 <h6>Header six</h6>
                                 <hr className="wp-block-separator" />
                                 <h2>Links</h2>
-                                <p>If you paste in a URL, like <a href="https://alithemes.com">https://alithemes.com</a> - it'll automatically be linked up. But if you want to customise your anchor text, you can do that too! Here's a link to <a href="https://alithemes.com">the Alithemes website.</a></p>
+                                <p>If you paste in a URL, like <a href="https://Orgits.com">https://Orgits.com</a> - it'll automatically be linked up. But if you want to customise your anchor text, you can do that too! Here's a link to <a href="https://Orgits.com">the Orgits website.</a></p>
                                 <hr className="wp-block-separator" />
                                 <h2>Blockquotes</h2>
                                 <p>Single line blockquote:</p>

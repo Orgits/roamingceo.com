@@ -28,7 +28,7 @@ function About() {
                         {/* <!--figure--> */}
                         <article className="entry-wraper">
                             <p className="font-large">
-                                We are AliThemes , a creative and dedicated
+                                We are Orgits , a creative and dedicated
                                 group of individuals who love web development
                                 almost as much as we love our customers. We are
                                 passionate team with the mission for achieving
@@ -60,8 +60,8 @@ function About() {
                                     ></ion-icon>
                                 </span>
                                 <strong>Our website</strong>:{" "}
-                                <a href="https://alithemes.com">
-                                    https://alithemes.com
+                                <a href="https://Orgits.com">
+                                    https://Orgits.com
                                 </a>
                             </p>
                             <p>
@@ -74,8 +74,8 @@ function About() {
                                     ></ion-icon>
                                 </span>
                                 <strong>Support center</strong>:{" "}
-                                <a href="https://alithemes.ticksy.com">
-                                    https://alithemes.ticksy.com
+                                <a href="https://Orgits.ticksy.com">
+                                    https://Orgits.ticksy.com
                                 </a>
                             </p>
                             <h3 className="mt-30">Advertise</h3>
