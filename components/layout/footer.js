@@ -1,5 +1,7 @@
 import Link from "next/link";
 import React from "react";
+import SubscribeForm from "../SubscribeForm"; // Import the form
+
 const Footer = ({ removeClass }) => {
     return (
         <>
@@ -190,7 +192,7 @@ const Footer = ({ removeClass }) => {
                                     <p className="font-medium">
                                     Stay ahead with RoamingCEO! 🚀 Subscribe to our newsletter for exclusive business insights, industry trends, and the latest updates—delivered straight to your inbox. 📩
                                     </p>
-                                    <form className="input-group form-subcriber mt-30 d-flex">
+                                    {/* <form className="input-group form-subcriber mt-30 d-flex">
                                         <input
                                             type="email"
                                             className="form-control bg-white font-small"
@@ -201,7 +203,7 @@ const Footer = ({ removeClass }) => {
                                             type="submit"
                                         >
                                             Subscribe
-                                        </button>
+                                        </button> */}
                                         {/* <label className="mt-20">
                                             {" "}
                                             <input
@@ -218,7 +220,8 @@ const Footer = ({ removeClass }) => {
                                                 </a>
                                             </Link>{" "}
                                         </label> */}
-                                    </form>
+                                    {/* </form> */}
+                                    <SubscribeForm />
                                 </div>
                             </div>
                         </div>

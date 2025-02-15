@@ -4,6 +4,8 @@ import Layout from "./../components/layout/layout";
 import PostCarousel1 from "./../components/slider/PostCarousel1";
 import post from "../data/post.json";
 import author from "../data/author.json";
+import SubscribeForm from "../components/SubscribeForm"; // Import the form
+
 function Home() {
     return (
         <>
@@ -31,7 +33,8 @@ function Home() {
                                         Travel tips, Hotels review, Food
                                         guide...
                                     </h5>
-                                    <form className="input-group form-subcriber mt-30 d-flex">
+                                    <SubscribeForm />
+                                    {/* <form className="input-group form-subcriber mt-30 d-flex">
                                         <input
                                             type="email"
                                             className="form-control bg-white font-small"
@@ -43,7 +46,7 @@ function Home() {
                                         >
                                             Subscribe
                                         </button>
-                                    </form>
+                                    </form> */}
                                 </div>
                                 <div className="col-lg-6 text-right d-none d-lg-block">
                                 
