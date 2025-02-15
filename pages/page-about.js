@@ -1,4 +1,6 @@
 import Layout from "./../components/layout/layout";
+import ContactForm from "../components/ContactForm";
+
 function About() {
     return (
         <>
@@ -6,14 +8,14 @@ function About() {
                 <main className="bg-grey pb-30">
                     <div className="container single-content">
                         <div className="entry-header entry-header-style-1 mb-50 pt-50 text-center">
-                            <h1 className="entry-title mb-20 font-weight-900 ">
-                                About me
+                            <h1 className="entry-title mb-20 font-weight-900">
+                                About RoamingCEO
                             </h1>
                             <p className="text-muted">
                                 <span
                                     className="typewrite d-inline"
                                     data-period="2000"
-                                    data-type='[ " Travel Blogger. ", "Content Writter. ", "Food Guides " ]'
+                                    data-type='[ " Business Leaders. ", " Entrepreneurs. ", " Global Thinkers. " ]'
                                 ></span>
                             </p>
                         </div>
@@ -22,139 +24,89 @@ function About() {
                             <img
                                 className="border-radius-10"
                                 src="/assets/imgs/news/news-17.jpg"
-                                alt="post-title"
+                                alt="RoamingCEO Community"
                             />
                         </figure>
                         {/* <!--figure--> */}
                         <article className="entry-wraper">
                             <p className="font-large">
-                                We are Orgits , a creative and dedicated
-                                group of individuals who love web development
-                                almost as much as we love our customers. We are
-                                passionate team with the mission for achieving
-                                the perfection in web design. All designs are
-                                made by love with pixel perfect design and
-                                excellent coding quality. Speed, security and
-                                SEO friendly alway in our mind.
+                                Welcome to <strong>RoamingCEO</strong>—a dynamic platform where
+                                business leaders, entrepreneurs, and innovators come together to connect,
+                                share insights, and explore the ever-evolving world of business, technology, and marketing.  
+                                Whether you're a CEO, a startup founder, or an ambitious professional,  
+                                RoamingCEO empowers you with cutting-edge industry insights, networking opportunities,  
+                                and exclusive access to global business trends.
                             </p>
                             <hr className="wp-block-separator is-style-wide" />
+                            
+                            <h3 className="mt-30">Our Vision</h3>
+                            <p>
+                                RoamingCEO was created to bridge the gap between business intelligence,  
+                                networking, and thought leadership. We provide a space for professionals  
+                                to gain actionable insights, explore investment opportunities, and engage  
+                                in high-level discussions about the future of business and technology.
+                            </p>
+
+                            <h3 className="mt-30">What We Offer</h3>
+                            <ul>
+                                <li>🚀 <strong>Business & Tech Insights</strong> – Stay updated with expert analysis on AI, automation, blockchain, and global market trends.</li>
+                                <li>🤝 <strong>Community & Masterminds</strong> – Join exclusive discussions with CEOs, entrepreneurs, and investors.</li>
+                                <li>💰 <strong>Investor-Startup Hub</strong> – Connect with venture capitalists, angel investors, and high-growth startups.</li>
+                                <li>🎤 <strong>Events & Summits</strong> – Attend global business summits, networking events, and leadership conferences.</li>
+                                <li>📊 <strong>CEO Index & Business Directory</strong> – Discover and connect with business leaders worldwide.</li>
+                            </ul>
+
+                            <h3 className="mt-30">Join the Movement</h3>
+                            <p>
+                                Whether you're looking for investment opportunities, growth strategies,  
+                                or a place to share your expertise, RoamingCEO is your gateway to a world of possibilities.  
+                                Visit <a href="https://roamingceo.com">RoamingCEO.com</a> and become part of a thriving  
+                                business community that’s shaping the future.
+                            </p>
+
+                            <hr className="wp-block-separator is-style-wide" />
+
+                            <h3 className="mt-30">Get in Touch</h3>
+                            <p>
+                                Have questions or collaboration ideas? We’d love to hear from you!
+                            </p>
+
                             <p>
                                 <span className="mr-5">
-                                    <ion-icon
-                                        name="location-outline"
-                                        role="img"
-                                        className="md hydrated"
-                                        aria-label="location outline"
-                                    ></ion-icon>
+                                    <ion-icon name="location-outline" role="img" className="md hydrated"></ion-icon>
                                 </span>
-                                <strong>Address</strong>: Lorem 142 Str., 2352,
-                                Ipsum, State, USA
+                                <strong>Headquarters</strong>: New Delhi, India | Global Network  
                             </p>
                             <p>
                                 <span className="mr-5">
-                                    <ion-icon
-                                        name="home-outline"
-                                        role="img"
-                                        className="md hydrated"
-                                        aria-label="home outline"
-                                    ></ion-icon>
+                                    <ion-icon name="home-outline" role="img" className="md hydrated"></ion-icon>
                                 </span>
-                                <strong>Our website</strong>:{" "}
-                                <a href="https://orgits.in">
-                                    https://orgits.in
-                                </a>
+                                <strong>Website</strong>: <a href="https://roamingceo.com">https://roamingceo.com</a>
                             </p>
                             <p>
                                 <span className="mr-5">
-                                    <ion-icon
-                                        name="planet-outline"
-                                        role="img"
-                                        className="md hydrated"
-                                        aria-label="planet outline"
-                                    ></ion-icon>
+                                    <ion-icon name="mail-outline" role="img" className="md hydrated"></ion-icon>
                                 </span>
-                                <strong>Support center</strong>:{" "}
-                                <a href="https://Orgits.ticksy.com">
-                                    https://Orgits.ticksy.com
-                                </a>
+                                <strong>Contact</strong>: <a href="mailto:support@orgits.in">support@orgits.in</a>
                             </p>
-                            <h3 className="mt-30">Advertise</h3>
+
+                            <h3 className="mt-30">Advertise & Partnerships</h3>
                             <hr className="wp-block-separator is-style-wide" />
                             <p>
-                                Please contact us directly at ads@ultranews.com.
-                                For large or unique campaigns please email
-                                sale@ultranews.com for requests-for-proposal and
-                                additional pricing information.{" "}
+                                Interested in reaching a high-impact audience of business professionals and CEOs?  
+                                Contact us at <a href="mailto:info@orgits.in">info@orgits.in</a> for advertising  
+                                opportunities or partnership inquiries.
                             </p>
-                            <h1 className="mt-30">Get in touch</h1>
+
+                            <h1 className="mt-30">Connect With Us</h1>
                             <hr className="wp-block-separator is-style-wide" />
-                            <form
-                                className="form-contact comment_form"
-                                action="#"
-                                id="commentForm"
-                            >
-                                <div className="row">
-                                    <div className="col-sm-6">
-                                        <div className="form-group">
-                                            <input
-                                                className="form-control"
-                                                name="name"
-                                                id="name"
-                                                type="text"
-                                                placeholder="Name"
-                                            />
-                                        </div>
-                                    </div>
-                                    <div className="col-sm-6">
-                                        <div className="form-group">
-                                            <input
-                                                className="form-control"
-                                                name="email"
-                                                id="email"
-                                                type="email"
-                                                placeholder="Email"
-                                            />
-                                        </div>
-                                    </div>
-                                    <div className="col-12">
-                                        <div className="form-group">
-                                            <input
-                                                className="form-control"
-                                                name="website"
-                                                id="website"
-                                                type="text"
-                                                placeholder="Phone"
-                                            />
-                                        </div>
-                                    </div>
-                                    <div className="col-12">
-                                        <div className="form-group">
-                                            <textarea
-                                                className="form-control w-100"
-                                                name="comment"
-                                                id="comment"
-                                                cols="30"
-                                                rows="9"
-                                                placeholder="Message"
-                                            ></textarea>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div className="form-group">
-                                    <button
-                                        type="submit"
-                                        className="button button-contactForm"
-                                    >
-                                        Send message
-                                    </button>
-                                </div>
-                            </form>
+                            <ContactForm/>
                         </article>
                     </div>
-                    {/* <!--container--> */}
                 </main>
             </Layout>
         </>
     );
 }
+
 export default About;
