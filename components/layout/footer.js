@@ -203,10 +203,10 @@ const Footer = ({ removeClass }) => {
                             © 2025, RoamingCEO | All Rights Reserved{" "}
                         </p>
                         <p className="float-md-right font-small text-muted">
-                            Design by{" "}
+                            Designed by{" "}
                             <Link href="https://orgits.in">
                                 <a target="_blank">
-                                    Orgits
+                                    Orgits Business Solutions Pvt. Ltd.
                                 </a>
                             </Link>{" "}
                             | All rights reserved
