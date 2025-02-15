@@ -192,35 +192,7 @@ const Footer = ({ removeClass }) => {
                                     <p className="font-medium">
                                     Stay ahead with RoamingCEO! 🚀 Subscribe to our newsletter for exclusive business insights, industry trends, and the latest updates—delivered straight to your inbox. 📩
                                     </p>
-                                    {/* <form className="input-group form-subcriber mt-30 d-flex">
-                                        <input
-                                            type="email"
-                                            className="form-control bg-white font-small"
-                                            placeholder="Enter your email"
-                                        />
-                                        <button
-                                            className="btn bg-primary text-white"
-                                            type="submit"
-                                        >
-                                            Subscribe
-                                        </button> */}
-                                        {/* <label className="mt-20">
-                                            {" "}
-                                            <input
-                                                className="mr-5"
-                                                name="name"
-                                                type="checkbox"
-                                                value="1"
-                                                required=""
-                                            />{" "}
-                                            I agree to the{" "}
-                                            <Link href="/#">
-                                                <a href="/#" target="_blank">
-                                                    terms &amp; conditions
-                                                </a>
-                                            </Link>{" "}
-                                        </label> */}
-                                    {/* </form> */}
+                                    
                                     <SubscribeForm />
                                 </div>
                             </div>
@@ -228,7 +200,7 @@ const Footer = ({ removeClass }) => {
                     </div>
                     <div className="footer-copy-right pt-30 mt-20 wow fadeInUp animated">
                         <p className="float-md-left font-small text-muted">
-                            © 2020, Stories - Personal Blog HTML Template{" "}
+                            © 2025, RoamingCEO{" "}
                         </p>
                         <p className="float-md-right font-small text-muted">
                             Design by{" "}
