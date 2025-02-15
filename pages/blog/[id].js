@@ -23,7 +23,7 @@ const SingleVendor = () => {
         event.preventDefault();
         setResult("Sending...");
         const formData = new FormData(event.target);
-        formData.append("access_key", "8405ef09-25b7-4594-a12d-3921d401c6c3");
+        formData.append("access_key", "60166303-5a0e-4712-8a73-8b9b25559efc");
 
         const response = await fetch("https://api.web3forms.com/submit", {
             method: "POST",
