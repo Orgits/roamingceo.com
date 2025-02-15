@@ -32,11 +32,11 @@ const Sidebar = ({ removeClass }) => {
                 <div className="widget_nav_menu">
                   <ul>
                     {[
-                      { name: "Travel tips", count: 30, link: "/category" },
-                      { name: "Book review", count: 25, link: "/category-grid" },
-                      { name: "Hotel review", count: 16, link: "/category-list" },
-                      { name: "Destinations", count: 22, link: "/category-masonry" },
-                      { name: "Lifestyle", count: 25, link: "/category-big" },
+                      { name: "Travel tips", count: 30, link: "/blog" },
+                      { name: "Book review", count: 25, link: "/blog" },
+                      { name: "Hotel review", count: 16, link: "/blog" },
+                      { name: "Destinations", count: 22, link: "/blog" },
+                      { name: "Lifestyle", count: 25, link: "/blog" },
                     ].map((category, i) => (
                       <li key={i} className={`cat-item cat-item-${i + 2}`}>
                         <Link href={category.link}>{category.name}</Link>
