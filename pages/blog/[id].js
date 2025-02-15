@@ -9,6 +9,7 @@ const SingleVendor = () => {
     const router = useRouter();
     const { id } = router.query;
     const [singleData, setSingleData] = useState(null);
+    const [result, setResult] = useState("");
 
     useEffect(() => {
         if (id) {
@@ -17,6 +18,27 @@ const SingleVendor = () => {
             setSingleData(foundPost);
         }
     }, [id]);
+
+    const handleFormSubmit = async (event) => {
+        event.preventDefault();
+        setResult("Sending...");
+        const formData = new FormData(event.target);
+        formData.append("access_key", "8405ef09-25b7-4594-a12d-3921d401c6c3");
+
+        const response = await fetch("https://api.web3forms.com/submit", {
+            method: "POST",
+            body: formData
+        });
+
+        const data = await response.json();
+        if (data.success) {
+            setResult("Form Submitted Successfully");
+            event.target.reset();
+        } else {
+            console.log("Error", data);
+            setResult(data.message);
+        }
+    };
 
     if (!singleData) {
         return (
@@ -54,44 +76,21 @@ const SingleVendor = () => {
                                     <span className="has-dot">{singleData.readTime} mins read</span>
                                 </div>
                             </div>
-                            <div className="col-md-6 text-right d-none d-md-inline">
-                                <ul className="header-social-network d-inline-block list-inline mr-15">
-                                    <li className="list-inline-item text-muted">
-                                        <span>Share:</span>
-                                    </li>
-                                    {["facebook", "twitter", "pinterest"].map((network) => (
-                                        <li key={network} className="list-inline-item">
-                                            <a className={`social-icon ${network}`} target="_blank" href="#">
-                                                <i className={`elegant-icon social_${network}`}></i>
-                                            </a>
-                                        </li>
-                                    ))}
-                                </ul>
-                            </div>
                         </div>
                     </div>
 
                     {/* Featured Image */}
                     <figure className="image mb-30 text-center">
-                        <img
-                            className="border-radius-10"
-                            src={`/assets/imgs/news/${singleData.img}`}
-                            alt={singleData.title}
-                        />
+                        <img className="border-radius-10" src={`/assets/imgs/news/${singleData.img}`} alt={singleData.title} />
                     </figure>
 
                     {/* Post Content */}
                     <article className="entry-wraper mb-50">
-                    <div className="entry-main-content wow fadeIn animated">
-    <p>{singleData.desc}</p>
-
-    {singleData.blogdesc
-        ? <div dangerouslySetInnerHTML={{ __html: singleData.blogdesc }} />
-        : <p>Loading detailed content...</p>
-    }
-
-    <hr className="wp-block-separator is-style-dots" />
-</div>
+                        <div className="entry-main-content wow fadeIn animated">
+                            <p>{singleData.desc}</p>
+                            {singleData.blogdesc ? <div dangerouslySetInnerHTML={{ __html: singleData.blogdesc }} /> : <p>Loading detailed content...</p>}
+                            <hr className="wp-block-separator is-style-dots" />
+                        </div>
 
                         {/* Subscribe Section */}
                         <div className="border-radius-10 border bg-white mb-30 p-30 wow fadeIn animated">
@@ -101,14 +100,11 @@ const SingleVendor = () => {
                                     <p>Subscribe to stay updated with the latest insights from CEOs & entrepreneurs.</p>
                                 </div>
                                 <div className="col-md-7">
-                                    <div className="row">
-                                        <div className="col-md-12">
-                                            <input type="email" className="form-control" placeholder="Enter your email" />
-                                        </div>
-                                        <div className="col-md-12 mt-2">
-                                            <button className="btn btn-primary btn-block">Subscribe</button>
-                                        </div>
-                                    </div>
+                                    <form onSubmit={handleFormSubmit}>
+                                        <input type="email" name="email" className="form-control mb-2" placeholder="Enter your email" required />
+                                        <button className="btn btn-primary btn-block" type="submit">Subscribe</button>
+                                        <span className="mt-2 d-block">{result}</span>
+                                    </form>
                                 </div>
                             </div>
                         </div>
@@ -129,15 +125,8 @@ const SingleVendor = () => {
                                         <div className="desc">
                                             <p>{comment.desc}</p>
                                             <div className="d-flex justify-content-between">
-                                                <h5>
-                                                    <Link href="/#">{comment.name}</Link>
-                                                </h5>
+                                                <h5><Link href="/#">{comment.name}</Link></h5>
                                                 <p className="date">{comment.date} at {comment.time}</p>
-                                            </div>
-                                            <div className="reply-btn">
-                                                <Link href="/#">
-                                                    <a className="btn-reply">Reply</a>
-                                                </Link>
                                             </div>
                                         </div>
                                     </div>
@@ -151,26 +140,26 @@ const SingleVendor = () => {
                         <div className="widget-header-2 mb-30">
                             <h5>Leave a Reply</h5>
                         </div>
-                        <form className="form-contact comment_form">
+                        <form className="form-contact comment_form" onSubmit={handleFormSubmit}>
                             <div className="row">
                                 <div className="col-12">
-                                    <textarea className="form-control w-100" name="comment" placeholder="Write your comment"></textarea>
+                                    <textarea className="form-control w-100" name="message" placeholder="Write your comment" required></textarea>
                                 </div>
                                 <div className="col-sm-6">
-                                    <input className="form-control" name="name" type="text" placeholder="Name" />
+                                    <input className="form-control" name="name" type="text" placeholder="Name" required />
                                 </div>
                                 <div className="col-sm-6">
-                                    <input className="form-control" name="email" type="email" placeholder="Email" />
+                                    <input className="form-control" name="email" type="email" placeholder="Email" required />
                                 </div>
                             </div>
                             <button type="submit" className="btn button-contactForm">Post Comment</button>
+                            <span className="mt-2 d-block">{result}</span>
                         </form>
                     </div>
                 </div>
             </main>
         </Layout>
-        
     );
-
 };
+
 export default SingleVendor;
