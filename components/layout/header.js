@@ -134,7 +134,7 @@ const Header = ({ addClass, openSearch }) => {
                                         </ul>
                                     </li>
                                     <li className="list-inline-item">
-                                        <Link href="http://demos.Orgits.com/html/stories/docs/">
+                                        <Link href="http://demos.orgits.in/html/stories/docs/">
                                             <a>
                                                 <i className="elegant-icon icon_document_alt mr-5"></i>
                                                 Document

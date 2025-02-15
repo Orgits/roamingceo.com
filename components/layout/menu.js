@@ -147,7 +147,7 @@ const Menu = ({ addClass }) => {
                                     </Link>
                                 </li>
                                 <li>
-                                    <Link href="/blog/15">
+                                    <Link href="blog/15">
                                         <a>Events & Summits</a>
                                     </Link>
                                 </li>

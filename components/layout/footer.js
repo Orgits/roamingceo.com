@@ -204,7 +204,7 @@ const Footer = ({ removeClass }) => {
                         </p>
                         <p className="float-md-right font-small text-muted">
                             Design by{" "}
-                            <Link href="https://Orgits.com">
+                            <Link href="https://orgits.in">
                                 <a target="_blank">
                                     Orgits
                                 </a>

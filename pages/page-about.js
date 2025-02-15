@@ -60,8 +60,8 @@ function About() {
                                     ></ion-icon>
                                 </span>
                                 <strong>Our website</strong>:{" "}
-                                <a href="https://Orgits.com">
-                                    https://Orgits.com
+                                <a href="https://orgits.in">
+                                    https://orgits.in
                                 </a>
                             </p>
                             <p>
