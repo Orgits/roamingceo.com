@@ -80,8 +80,7 @@ const Search = () => {
                                             <Link href="/category"><a>Travel Tips</a></Link>{" "}
                                         </h6>
                                         <p className="text-muted font-small">
-                                            Lorem ipsum dolor sit amet, consectetur
-                                            adipiscing elit.
+                                            read more about the best travel tips
                                         </p>
                                     </div>
                                 </div>
@@ -102,8 +101,7 @@ const Search = () => {
                                             <Link href="/category"><a>Lifestyle</a></Link>{" "}
                                         </h6>
                                         <p className="text-muted font-small">
-                                            Lorem ipsum dolor sit amet, consectetur
-                                            adipiscing elit.
+                                           read more about the best lifestyle
                                         </p>
                                     </div>
                                 </div>
