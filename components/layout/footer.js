@@ -100,7 +100,7 @@ const Footer = ({ removeClass }) => {
                                         </Link>
                                     </li>
                                     <li className="cat-item cat-item-7">
-                                        <Link href="/#">
+                                        <Link href="/blog/15">
                                             <a>Events & Summits</a>
                                         </Link>
                                     </li>

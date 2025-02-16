@@ -28,9 +28,9 @@ function Home() {
                                     </h2>
                                 
                                     <h3 className="mb-20" > Welcome to Roamingceo</h3>
-                                    <h5 className="text-muted">
+                                    <span>
                                     Stay ahead with exclusive insights on Business Trends, CEO Spotlights, and Startup Success – only on RoamingCEO!
-                                    </h5>
+                                    </span>
                                     <SubscribeForm />
                                     {/* <form className="input-group form-subcriber mt-30 d-flex">
                                         <input
